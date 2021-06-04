@@ -1,0 +1,1 @@
+java -jar C:\Users\Roberto\.m2\repository\com\github\mvallim\spring-schema-registry-embedded\1.0.0\spring-schema-registry-embedded-1.0.0.jar --brokers=1 --topic-partitions=1 --broker-port=9092 --topics=servico-entrada

@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "44bc2164-c8ae-4b21-8489-c0b968592908",
+		"name": "AVRO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CadastraAvro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.schemaregistry.v1+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"schema\": \"{\\\"type\\\":\\\"record\\\",\\\"name\\\":\\\"IdentificaCliente\\\",\\\"namespace\\\":\\\"com.exemplo.avro\\\",\\\"fields\\\":[{\\\"name\\\":\\\"nomePrincipal\\\",\\\"type\\\":\\\"string\\\"},{\\\"name\\\":\\\"cidadeNatal\\\",\\\"type\\\":\\\"string\\\"}]}\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/subjects/servico-entrada/versions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects",
+						"servico-entrada",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VerificaAvrosCadastrados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

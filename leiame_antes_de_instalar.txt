@@ -1,0 +1,2 @@
+-recomenda-se utilizar java 11 (jdk)
+-executar o comando de instalação em uma pasta qualquer que contenha um arquivo pom.xml
